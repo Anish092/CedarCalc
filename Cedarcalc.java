@@ -5,15 +5,18 @@ public class Cedarcalc{
 	public static void main(String[] args) {
 
 	Scanner keyboard = new Scanner(System.in);
-	int people, chaperones, admission, allowance;
+	int people, chaperones, admission, allowance, admissiontw;
 	double admission2, totad, bus, bus2, bus3, total;
 
-
+    // Ask for kids, and calculate chaperones needed
 	System.out.println("How many kids will be attending: ");
 	people = keyboard.nextInt();
 	chaperones = people/4;
 	admission = chaperones + people;
+	//admissiontw = admission/15;
+	//admission = admission - admissiontw;
 
+    // Deciding when trip will occur
 	System.out.println("When will this trip occur(type 1 for spring and 2 for fall): ");
 	admission2 = keyboard.nextInt();
 	if (admission2 == 1){
@@ -24,11 +27,13 @@ public class Cedarcalc{
 		   }
      totad = admission * admission2;
 
+    //Deciding which bus to take
     System.out.println("What bus will you take(type 1 for school and 2 for charter): ");
 		bus = keyboard.nextInt();
-
+    // Caluclating allowance
     allowance = admission * 25;
 
+    // Dsiplaying information
     System.out.printf("%50s", "You need this many chaperones: ");
     System.out.printf("%24s\n", chaperones);
 	System.out.printf("%50s", "Cost of admission: ");
