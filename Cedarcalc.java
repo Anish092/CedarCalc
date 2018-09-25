@@ -13,8 +13,8 @@ public class Cedarcalc{
 	people = keyboard.nextInt();
 	chaperones = people/4;
 	admission = chaperones + people;
-	//admissiontw = admission/15;
-	//admission = admission - admissiontw;
+	admissiontw = admission/15;
+	admission = admission - admissiontw;
 
     // Deciding when trip will occur
 	System.out.println("When will this trip occur(type 1 for spring and 2 for fall): ");
