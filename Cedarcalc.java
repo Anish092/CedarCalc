@@ -15,7 +15,7 @@ public class Cedarcalc{
 	admission = chaperones + people;
 	admissiontw = admission/15;
 	admission = admission - admissiontw;
-
+    // g
     // Deciding when trip will occur
 	System.out.println("When will this trip occur(type 1 for spring and 2 for fall): ");
 	admission2 = keyboard.nextInt();
