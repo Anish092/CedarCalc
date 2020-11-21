@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Cedarcalc{
 
 	public static void main(String[] args) {
-
+//u
 	Scanner keyboard = new Scanner(System.in);
 	int people, chaperones, admission, allowance, admissiontw;
 	double admission2, totad, bus, bus2, bus3, total;
